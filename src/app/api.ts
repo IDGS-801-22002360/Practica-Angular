@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-interface DatosApi {
+export interface DatosApi {
     //* Define aqui la estructura de los datos que esperas recibir de la API
     message: string;
     timestamp: string;
@@ -13,7 +13,7 @@ interface DatosApi {
 })
 export class Api {
 
-    private apiurl = 'http://localhost:3000';
+    private apiurl = 'http://localhost:3000/users';
 
     // primero se inyecta el HttpClient, esto para poder hacer las peticiones a la Api
     constructor(private http: HttpClient) { }

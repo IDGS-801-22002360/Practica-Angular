@@ -1,0 +1,44 @@
+<!--! Usuario  -->
+<div class="card col-md-6 mx-auto mt-5 shadow-sm">
+  <div class="card-body p-3">
+    <h2 class="text-center">
+      Lista de usuarios
+    </h2>
+
+    @if (isLoading()) {
+    <p>Cargando Usuarios...</p>
+    }
+
+    @if (error()) {
+    <div style="color:red; border:1px solid red; padding:10px;">
+      <p>Error al cargar usuarios. Intenta de nuevo.</p>
+    </div>
+    }
+
+    @if (usuarios().length > 0 && !isLoading()) {
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Email</th>
+          <th>Numero</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (usuario of usuarios(); track usuario.id) {
+        <tr>
+          <td>{{ usuario.id }}</td>
+          <td>{{ usuario.nombre }}</td>
+          <td>{{ usuario.email }}</td>
+          <td>{{ usuario.numero }}</td>
+        </tr>
+        }
+      </tbody>
+    </table>
+
+    } @else if(!isLoading() && !error()) {
+    <p>No se encontraron usuarios</p>
+    }
+  </div>
+</div>
