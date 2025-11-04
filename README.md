@@ -1,7 +1,7 @@
 # PracticaFront
 
 
-https://github.com/user-attachments/assets/6bfb755b-b417-4bb7-8dca-737491399c1a
+https://github.com/user-attachments/assets/3056bdd2-80f0-4a1a-bdcd-c410e1dcf84c
 
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.8.
@@ -61,4 +61,5 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
 
